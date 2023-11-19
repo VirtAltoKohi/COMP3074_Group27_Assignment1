@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/search_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search restaurants"
+        android:inputType="text"
+        android:drawableEnd="@drawable/ic_search" />
+
+    <ListView
+        android:id="@+id/list_view_restaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_field"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Add your filters here. For example, a spinner for cuisine type -->
+    <Spinner
+        android:id="@+id/spinner_cuisine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_view_restaurants"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add other filters like rating, price range, etc. -->
+    <!-- Example spinner for rating -->
+    <Spinner
+        android:id="@+id/spinner_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_cuisine"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add more filter UI elements as needed -->
+
+</RelativeLayout>
