@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Group27_Restaurant_Guide</string>
+    <string name="splash_screen_logo">Splash Screen Logo</string>
+    <string name="placeholder_restaurant_title">Restaurant Title</string>
+    <string name="placeholder_restaurant_location">Restaurant Location</string>
+    <string name="placeholder_restaurant_ratting">Restaurant Ratting</string>
+    <string name="placeholder_restaurant_contentImage">Restaurant image</string>
+
+    <!-- Student Information -->
+
+    <string name="Student_Name_0">Diego Esteban, Plata Gomez</string>
+    <string name="Student_ID_0">101354581</string>
+
+    <string name="Student_Name_1">Evan, James</string>
+    <string name="Student_ID_1">101351543</string>
+
+    <string name="Student_Name_2">Ronan, Behan</string>
+    <string name="Student_ID_2">101366894</string>
+
+    <string name="Student_Name_3">Zhongfan, Dong</string>
+    <string name="Student_ID_3">101316909</string>
 </resources>

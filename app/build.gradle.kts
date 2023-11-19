@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "ca.gbc.comp3074.group27_restaurant_guide"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "ca.gbc.comp3074.group27_restaurant_guide"
