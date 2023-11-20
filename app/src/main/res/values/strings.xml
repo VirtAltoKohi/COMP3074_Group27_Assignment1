@@ -19,4 +19,24 @@
 
     <string name="Student_Name_3">Zhongfan, Dong</string>
     <string name="Student_ID_3">101316909</string>
+
+    <!-- Add Restaurant Screen -->
+
+    <string name="rn_tv">Restaurant Name</string>
+    <string name="rn_tt">(insert name here)</string>
+
+    <string name="rl_tv">Restaurant Location</string>
+    <string name="rl_tt">(insert location here)</string>
+
+    <string name="rg_tv">Restaurant Genre</string>
+    <string name="rg_tt">(insert genre here)</string>
+
+    <string name="gar_tv">Give a rating</string>
+    <string name="gar_df">(insert decimal ratting)</string>
+
+    <string name="usp_tv">Upload some photos</string>
+    <string name="usp_btn">Upload</string>
+
+    <string name="gps_button">GPS Locator</string>
+
 </resources>

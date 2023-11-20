@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_AD"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="672dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Add Restaurant"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/rn_textview"
+        android:layout_width="344dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="37dp"
+        android:text="@string/rn_tv"
+        android:textAlignment="viewStart"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/rn_texttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_AD" />
+
+    <EditText
+        android:id="@+id/rn_texttext"
+        android:layout_width="340dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="35dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/rn_tt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/rl_textview"
+        android:layout_width="335dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:text="@string/rl_tv"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rn_texttext" />
+
+    <EditText
+        android:id="@+id/rl_texttext"
+        android:layout_width="334dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="484dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/rl_tt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rg_textview"
+        android:layout_width="334dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/rg_tv"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/rg_texttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl_texttext" />
+
+    <EditText
+        android:id="@+id/rg_texttext"
+        android:layout_width="334dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/rg_tt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_textview" />
+
+    <TextView
+        android:id="@+id/gar_textview"
+        android:layout_width="332dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/gar_tv"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/gar_texttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_texttext" />
+
+    <EditText
+        android:id="@+id/gar_texttext"
+        android:layout_width="335dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="288dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/gar_df"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gar_textview" />
+
+    <Button
+        android:id="@+id/usp_button"
+        android:layout_width="199dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="175dp"
+        android:text="@string/usp_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usp_textview" />
+
+    <TextView
+        android:id="@+id/usp_textview"
+        android:layout_width="313dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/usp_tv"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/usp_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gar_texttext"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="224dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/gps_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usp_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
