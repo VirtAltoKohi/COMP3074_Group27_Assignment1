@@ -17,6 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group27_Restaurant_Guide"
         tools:targetApi="31">
+
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -26,14 +27,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
         </activity>
+
+        <!-- About Section Activity-->
         <activity
             android:name=".AboutActivity"
             android:exported="true">
         </activity>
+
+        <!-- Existing SearchAndFilterActivity -->
+        <activity
+            android:name=".SearchAndFilterActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".SocialSharingActivity"
+            android:exported="true">
+        </activity>
+
     </application>
 
 </manifest>
