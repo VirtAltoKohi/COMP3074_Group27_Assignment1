@@ -3,40 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_AD"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="672dp"
+        android:layout_above="@id/rn_textview"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:title="Add Restaurant"
         app:titleTextColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/rn_textview"
-        android:layout_width="344dp"
+        android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:layout_marginStart="37dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="37dp"
+        android:layout_marginBottom="4dp"
         android:text="@string/rn_tv"
         android:textAlignment="viewStart"
-        android:textSize="26sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/rn_texttext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_AD" />
+
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/rn_texttext"
@@ -48,18 +49,18 @@
         android:inputType="text"
         android:text="@string/rn_tt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="141dp" />
+        tools:layout_editor_absoluteY="113dp" />
 
     <TextView
         android:id="@+id/rl_textview"
-        android:layout_width="335dp"
+        android:layout_width="wrap_content"
         android:layout_height="36dp"
         android:layout_marginStart="39dp"
         android:layout_marginEnd="39dp"
         android:text="@string/rl_tv"
-        android:textSize="26sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,18 +78,18 @@
         android:text="@string/rl_tt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/rg_textview"
-        android:layout_width="334dp"
+        android:layout_width="wrap_content"
         android:layout_height="34dp"
         android:layout_marginStart="37dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="11dp"
         android:text="@string/rg_tv"
-        android:textSize="26sp"
+        android:textSize="22sp"
         app:layout_constraintBottom_toTopOf="@+id/rg_texttext"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -98,14 +99,14 @@
     <EditText
         android:id="@+id/rg_texttext"
         android:layout_width="334dp"
-        android:layout_height="58dp"
+        android:layout_height="48dp"
         android:layout_marginStart="38dp"
         android:layout_marginEnd="39dp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/rg_tt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rg_textview" />
 
@@ -142,7 +143,7 @@
 
     <Button
         android:id="@+id/usp_button"
-        android:layout_width="199dp"
+        android:layout_width="128dp"
         android:layout_height="60dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="15dp"

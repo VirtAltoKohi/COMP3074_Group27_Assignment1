@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="16dp"
     tools:context=".MainActivity" >
 
     <androidx.appcompat.widget.Toolbar
@@ -12,15 +13,28 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
 
     <ListView
         android:id="@+id/Restaurant_Listings"
         android:layout_width="wrap_content"
         android:layout_height="594dp"
-        android:layout_below="@+id/toolbar3"
+        android:layout_below="@+id/toolbar_MA"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="-2dp"
         android:layout_marginBottom="75dp"
         android:padding="16dp" />
+
+    <Button
+        android:id="@+id/Add_Restaurant_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="15dp"
+        android:text="Add Restaurant" />
 </RelativeLayout>

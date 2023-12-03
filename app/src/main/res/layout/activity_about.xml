@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_AS"
@@ -17,20 +18,19 @@
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="97dp"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar_AS"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="33dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="106dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="256dp">
 
         <TableRow
             android:id="@+id/Entry_1"
-            android:layout_width="match_parent"
+            android:layout_width="128dp"
             android:layout_height="match_parent">
 
             <TextView
@@ -42,7 +42,7 @@
 
             <TextView
                 android:id="@+id/ID_1"
-                android:layout_width="170.5dp"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:text="@string/Student_ID_0"
                 android:textAlignment="center" />
@@ -118,14 +118,11 @@
         android:id="@+id/Column_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_AS"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="83dp"
-        android:layout_marginTop="142dp"
-        android:layout_marginEnd="267dp"
-        android:layout_marginBottom="362dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="16dp"
         android:text="Name"
         android:textAlignment="center" />
 
@@ -133,12 +130,9 @@
         android:id="@+id/Column_ID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="263dp"
-        android:layout_marginEnd="87dp"
-        android:layout_marginBottom="361dp"
+        android:layout_below="@id/toolbar_AS"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="70dp"
         android:text="ID"
         android:textAlignment="center" />
 
