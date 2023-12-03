@@ -24,8 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.toolbar_menu, menu);
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
         return true;
     }
 
@@ -33,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         int id = item.getItemId();
-        if (id == R.id.about_section) {
+        if (id == R.id.menu_item_one) {
             startActivity(new Intent(this, AboutActivity.class));
+            return true;
+        } else if (id == R.id.menu_item_two) {
+
             return true;
         }
         return super.onOptionsItemSelected(item);
