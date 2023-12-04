@@ -6,6 +6,30 @@
     android:layout_height="match_parent"
     android:layout_margin="16dp">
 
+    <TextView
+        android:id="@+id/rn_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/rn_tv"
+        android:textAlignment="viewStart"
+        android:textSize="22sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <TextView
+        android:id="@+id/rl_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="39dp"
+        android:text="@string/rl_tv"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rn_texttext" />
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_AD"
         android:layout_width="match_parent"
@@ -23,48 +47,15 @@
         app:title="Add Restaurant"
         app:titleTextColor="#FFFFFF" />
 
-    <TextView
-        android:id="@+id/rn_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginEnd="37dp"
-        android:layout_marginBottom="4dp"
-        android:text="@string/rn_tv"
-        android:textAlignment="viewStart"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toTopOf="@+id/rn_texttext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-
-        app:layout_constraintStart_toStartOf="parent" />
-
     <EditText
         android:id="@+id/rn_texttext"
         android:layout_width="340dp"
         android:layout_height="37dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginEnd="35dp"
         android:ems="10"
         android:inputType="text"
         android:text="@string/rn_tt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.558"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="113dp" />
-
-    <TextView
-        android:id="@+id/rl_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginEnd="39dp"
-        android:text="@string/rl_tv"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rn_texttext" />
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="193dp" />
 
     <EditText
         android:id="@+id/rl_texttext"
@@ -183,6 +174,8 @@
         android:text="@string/gps_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usp_button" />
+        app:layout_constraintTop_toBottomOf="@+id/usp_button"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
