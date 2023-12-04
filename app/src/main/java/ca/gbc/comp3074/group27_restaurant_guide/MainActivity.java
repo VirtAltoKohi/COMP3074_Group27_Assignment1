@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.widget.Toolbar;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar_MA;
+    Button Add_Restaurant_bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +22,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         toolbar_MA = findViewById(R.id.toolbar_MA);
+        Add_Restaurant_bt = findViewById(R.id.Add_Restaurant_bt);
+
+        Add_Restaurant_bt.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                onAddRestaurantClick();
+            }
+        });
+
         setSupportActionBar(toolbar_MA);
+    }
+
+    public boolean onAddRestaurantClick() {
+        startActivity(new Intent(this, AddRestaurantActivity.class));
+        return true;
     }
 
     @Override

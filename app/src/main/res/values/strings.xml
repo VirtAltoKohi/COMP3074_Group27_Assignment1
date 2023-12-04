@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Group27_Restaurant_Guide</string>
     <string name="splash_screen_logo">Splash Screen Logo</string>
-    <string name="placeholder_restaurant_title">Restaurant Title</string>
-    <string name="placeholder_restaurant_location">Restaurant Location</string>
+    <string name="placeholder_restaurant_title">Restaurant Name</string>
+    <string name="placeholder_restaurant_location">Restaurant Address</string>
     <string name="placeholder_restaurant_ratting">Restaurant Ratting</string>
     <string name="placeholder_restaurant_contentImage">Restaurant image</string>
 
