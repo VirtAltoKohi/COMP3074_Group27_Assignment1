@@ -10,33 +10,42 @@
         android:layout_height="wrap_content"
         android:hint="Search restaurants"
         android:inputType="text"
-        android:drawableEnd="@drawable/ic_search" />
+        android:drawableEnd="@drawable/ic_search"
+        android:drawablePadding="10dp" />
 
     <ListView
         android:id="@+id/list_view_restaurants"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_below="@id/search_field"
+        android:layout_above="@+id/footer"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="1dp" />
 
-    <!-- Add your filters here. For example, a spinner for cuisine type -->
-    <Spinner
-        android:id="@+id/spinner_cuisine"
+    <!-- Footer layout that holds filter options -->
+    <LinearLayout
+        android:id="@+id/footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/list_view_restaurants"
-        android:layout_marginTop="16dp" />
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:layout_alignParentBottom="true">
 
-    <!-- Add other filters like rating, price range, etc. -->
-    <!-- Example spinner for rating -->
-    <Spinner
-        android:id="@+id/spinner_rating"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/spinner_cuisine"
-        android:layout_marginTop="16dp" />
+        <!-- Spinner for cuisine type filter -->
+        <Spinner
+            android:id="@+id/spinner_cuisine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/cuisine_array" />
 
-    <!-- Add more filter UI elements as needed -->
+        <!-- Spinner for rating filter -->
+        <Spinner
+            android:id="@+id/spinner_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/rating_array" />
+
+        <!-- More spinners or other filter UI elements can be added here -->
+    </LinearLayout>
 
 </RelativeLayout>

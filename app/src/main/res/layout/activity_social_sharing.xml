@@ -4,54 +4,52 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!-- Overview Section -->
     <TextView
-        android:id="@+id/overview_text"
-        android:layout_width="match_parent"
+        android:id="@+id/description_text"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Share your experience"
+        android:text="Share your experience with others"
         android:textSize="18sp"
-        android:paddingBottom="16dp" />
+        android:layout_centerHorizontal="true" />
 
-    <!-- Post Creation Field -->
     <EditText
         android:id="@+id/post_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/overview_text"
-        android:hint="Write your post here"
+        android:layout_below="@id/description_text"
+        android:hint="Write your post here..."
         android:inputType="textMultiLine"
         android:gravity="top"
         android:minLines="4"
-        android:maxLines="6" />
+        android:maxLines="6"
+        android:layout_marginTop="16dp"/>
 
-    <!-- Sharing Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/post_field"
         android:orientation="horizontal"
-        android:paddingTop="16dp">
+        android:layout_marginTop="16dp">
 
         <Button
             android:id="@+id/email_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Share via Email" />
+            android:text="Email"/>
 
         <Button
             android:id="@+id/twitter_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Share on Twitter" />
+            android:text="Twitter"/>
 
         <Button
             android:id="@+id/facebook_button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Share on Facebook" />
+            android:text="Facebook"/>
     </LinearLayout>
 </RelativeLayout>
